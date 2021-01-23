@@ -20,7 +20,7 @@ local colorList = {
 function initUi()
   for i = 1, 11, 1
   do
-    app.registerUi({["menu"] = "Select "..colorList[i][1].." color.", ["callback"] = "color"..i, ["accelerator"] = "<Alt>"..colorList[i][3]});
+    app.registerUi({["menu"] = "Select "..colorList[i][1].." color", ["callback"] = "color"..i, ["accelerator"] = "<Alt>"..colorList[i][3]});
   end
 end
 
