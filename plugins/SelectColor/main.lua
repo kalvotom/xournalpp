@@ -4,21 +4,21 @@
 -- Modify to your needs 
 local colorList = { 
   {"black",      0x000000, "1"},
-  {"green",      0x008000, "2"},
-  {"lightblue",  0x00c0ff, "3"},
-  {"lightgreen", 0x00ff00, "4"},
-  {"blue",       0x3333cc, "5"},
-  {"gray",       0x808080, "6"},
-  {"red",        0xff0000, "7"},
-  {"magenta",    0xff00ff, "8"},
-  {"orange",     0xff8000, "9"},
-  {"yellow",     0xffff00, "0"},
-  {"white",      0xffffff, "q"}
+  {"red",        0xff0000, "2"},
+  {"blue",       0x3333cc, "3"},
+  {"green",      0x008000, "4"},
+  {"gray",       0x808080, "5"},
+--  {"lightblue",  0x00c0ff, "3"},
+--  {"lightgreen", 0x00ff00, "4"},
+--  {"magenta",    0xff00ff, "8"},
+--  {"orange",     0xff8000, "9"},
+--  {"yellow",     0xffff00, "0"},
+--  {"white",      0xffffff, "q"}
 }
 
 -- Register all Toolbar actions and intialize all UI stuff
 function initUi()
-  for i = 1, 11, 1
+  for i = 1, 5, 1
   do
     app.registerUi({["menu"] = "Select "..colorList[i][1].." color", ["callback"] = "color"..i, ["accelerator"] = "<Alt>"..colorList[i][3]});
   end
